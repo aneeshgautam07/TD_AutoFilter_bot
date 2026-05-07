@@ -15,7 +15,7 @@ API_HASH = os.environ.get("5197eef07d0ae6434711d49219739aaa", "")
 BOT_TOKEN = os.environ.get("8669072161:AAFUHix_fklDMXBtox3FVBwbeTrfjTj9nC0", "")
 
 # Search Settings
-DB_CHANNEL_ID = int(os.environ.get("DB_CHANNEL_ID", --1003954020823))
+DB_CHANNEL_ID = int(os.environ.get("DB_CHANNEL_ID", -1003954020823))
 START_TEXT = os.environ.get("START_TEXT", "🚀 Welcome to CineVerse Ultra\n\n🎬 Movies • Series • Anime • Episodes — All in One Place\n⚡ Lightning Fast Search with Smart Auto Filters\n🧠 Auto Detect Language • Quality • Seasons\n\n📂 Continue Watching • 🔥 Trending • ▶️ One Click Play\n\n🔍 Just send any name (movie / series / file) to start exploring")
 MAX_RESULTS = int(os.environ.get("MAX_RESULTS", 10))
 
@@ -34,7 +34,7 @@ ADMINS = [int(x) for x in os.environ.get("ADMINS", "6440652367").split(",") if x
 
 # Force Subscribe Settings
 # Updated to -1002497059972 as per user request
-FORCE_SUB_CHANNELS = [int(x) for x in os.environ.get("FORCE_SUB_CHANNELS", "-1003998143192").split(",") if x] # multiple force sub allowed ("-1003511440278","-1003511440278")
+FORCE_SUB_CHANNELS = [int(x) for x in os.environ.get("FORCE_SUB_CHANNELS", "-1003102209803").split(",") if x] # multiple force sub allowed ("-1003511440278","-1003511440278")
 ADMIN_IDS = ADMINS + [OWNER_ID]
 FORCE_SUB_TEXT = os.environ.get("FORCE_SUB_TEXT", "📥 **Please join our channels to use this bot!**\n\nDue to high server load, only subscribers can search files.")
 
