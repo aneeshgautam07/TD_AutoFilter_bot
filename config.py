@@ -10,10 +10,9 @@ from dotenv import load_dotenv
 # config.py
 load_dotenv()
 
-API_ID = int(os.environ.get("39188641", ))
-API_HASH = os.environ.get("5197eef07d0ae6434711d49219739aaa", "")
-BOT_TOKEN = os.environ.get("8669072161:AAFUHix_fklDMXBtox3FVBwbeTrfjTj9nC0", "")
-
+API_ID = int(os.environ.get("API_ID", "39188641"))
+API_HASH = os.environ.get("API_HASH", "5197eef07d0ae6434711d49219739aaa")
+BOT_TOKEN = os.environ.get("BOT_TOKEN", "8669072161:AAFUHiX_fk1DMXBtox3FVbwbeTrfJj9nC0")
 # Search Settings
 DB_CHANNEL_ID = int(os.environ.get("DB_CHANNEL_ID", -1003954020823))
 START_TEXT = os.environ.get("START_TEXT", "🚀 Welcome to CineVerse Ultra\n\n🎬 Movies • Series • Anime • Episodes — All in One Place\n⚡ Lightning Fast Search with Smart Auto Filters\n🧠 Auto Detect Language • Quality • Seasons\n\n📂 Continue Watching • 🔥 Trending • ▶️ One Click Play\n\n🔍 Just send any name (movie / series / file) to start exploring")
